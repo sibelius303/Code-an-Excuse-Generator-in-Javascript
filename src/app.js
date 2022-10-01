@@ -10,7 +10,9 @@ import "./assets/img/4geeks.ico";
 // console.log("Hello Rigo from the console!");
 //};
 
-let who = ["el perro", "mi abuela", "la tortuga", "mi pajaro"];
+const boton = document.getElementById("boton");
+
+let who = ["El perro", "Mi abuela", "La tortuga", "Mi pajaro"];
 
 let what = ["comio mi tarea", "orino mis apuntes", "choco el auto", "rompio"];
 
@@ -22,16 +24,24 @@ let when = [
   "mientras estaba orando"
 ];
 
-var whoAleatorio = Math.floor(Math.random() * who.length);
-var whoDato = who[whoAleatorio];
+function change() {
+  var whoAleatorio = Math.floor(Math.random() * who.length);
+  var whoDato = who[whoAleatorio];
 
-var whatAleatorio = Math.floor(Math.random() * what.length);
-var whatDato = what[whatAleatorio];
+  var whatAleatorio = Math.floor(Math.random() * what.length);
+  var whatDato = what[whatAleatorio];
 
-var whenAleatorio = Math.floor(Math.random() * when.length);
-var whenDato = when[whenAleatorio];
+  var whenAleatorio = Math.floor(Math.random() * when.length);
+  var whenDato = when[whenAleatorio];
 
-var result = whoDato + " " + "se " + whatDato + " " + whenDato;
+  var result = whoDato + " " + "se " + whatDato + " " + whenDato;
 
-let excuse = document.getElementById("excuse");
-excuse.innerHTML = result;
+  let excuse = document.getElementById("excuse");
+  excuse.innerHTML = result;
+}
+
+change();
+
+boton.addEventListener("click", e => {
+  change();
+});

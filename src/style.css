@@ -1,1 +1,66 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.container {
+  height: 550px;
+  margin-top: 30px;
+  font-family: "Alkalami", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: -1px 7px 42px 25px rgba(255, 255, 255, 0.68);
+  -webkit-box-shadow: -1px 7px 42px 25px rgba(255, 255, 255, 0.68);
+  -moz-box-shadow: -1px 7px 42px 25px rgba(255, 255, 255, 0.68);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0479c3;
+  height: 200px;
+}
+
+h1 {
+  font-family: "Alkalami", serif;
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+button {
+  width: 20%;
+  height: 20%;
+  transition: 0.5s;
+  background: none;
+  color: #fff;
+  border-color: #fff;
+}
+
+button:hover {
+  width: 100%;
+  background-color: #090979;
+}
